@@ -70,4 +70,8 @@ public class Bill {
 		}
 	}
 	
+	public static double total(int beer, int softDrink, int barbecue, char gender) {
+		return feeding(beer, softDrink, barbecue) + cover(beer, softDrink, barbecue) + ticket(gender);
+	}
+	
 }

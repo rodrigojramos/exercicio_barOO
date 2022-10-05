@@ -23,17 +23,16 @@ public class Program {
 		
 		System.out.println();
 		System.out.println("RELATÓRIO:");
-		System.out.println("Consumo = R$ " + Bill.feeding(beer, softDrink, barbecue));
+		System.out.println("Consumo = R$ " + String.format("%.2f", Bill.feeding(beer, softDrink, barbecue)));
 		if(Bill.cover(beer, softDrink, barbecue) == 0) {
 			System.out.println("Isento de Couvert");
 		} else {
-			System.out.println("Couvert = R$ " + Bill.cover(beer, softDrink, barbecue));
+			System.out.println("Couvert = R$ " + String.format("%.2f", Bill.cover(beer, softDrink, barbecue)));
 		}
-		System.out.println("Ingresso = R$ " + Bill.ticket(gender));
+		System.out.println("Ingresso = R$ " + String.format("%.2f", Bill.ticket(gender)));
 		System.out.println();
-		System.out.println("Valor a pagar = R$ ");
+		System.out.println("Valor a pagar = R$ " + String.format("%.2f", Bill.total(beer, softDrink, barbecue, gender)));
 		
 		sc.close();
 	}
-
 }

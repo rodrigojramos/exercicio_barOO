@@ -24,7 +24,7 @@ public class Program {
 		System.out.println();
 		System.out.println("RELATÓRIO:");
 		System.out.println("Consumo = R$ " + Bill.feeding(beer, softDrink, barbecue));
-		System.out.println("Couvert = R$ ");
+		System.out.println("Couvert = R$ " + Bill.cover(beer, softDrink, barbecue));
 		System.out.println("Ingresso = R$ ");
 		System.out.println();
 		System.out.println("Valor a pagar = R$ ");

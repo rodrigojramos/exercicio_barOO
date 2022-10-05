@@ -54,5 +54,12 @@ public class Bill {
 		return feeding;	
 	}
 	
+	public static Double cover(int beer, int softDrink, int barbecue) {
+		if(feeding(beer, softDrink, barbecue) > 30) {
+			return  0.00;
+		} else {
+			return  4.00;
+		}
+	}
 	
 }

@@ -62,4 +62,12 @@ public class Bill {
 		}
 	}
 	
+	public static Double ticket(char gender) {
+		if(gender == 'M') {
+			return 10.0;
+		} else {
+			return 8.0;
+		}
+	}
+	
 }
